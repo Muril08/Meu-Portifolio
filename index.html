@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Murilo Alves</title>
+    <link rel="icon" href="imgs/icons8-dev-16.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>  
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+        section {
+            scroll-margin-top: 80px;
+        }
+        .gradient-text {
+            -webkit-background-clip: text;
+            background-clip: text;
+            color:#8b5cf6;
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body class="bg-slate-950">
+  <nav class="bg-slate-950 border-b border-gray-800 fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <a href="#" class="text-2xl font-bold gradient-text">MURILO ALVES</a>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#" class="text-gray-300 hover:text-purple-500 font-medium transition">INÍCIO</a>
+          <a href="#sobre" class="text-gray-300 hover:text-purple-500 font-medium transition">SOBRE</a>
+          <a href="#certificacoes" class="text-gray-300 hover:text-purple-500 font-medium transition">CERTIFICAÇÕES</a>
+          <a href="#projetos" class="text-gray-300 hover:text-purple-500 font-medium transition">PROJETOS</a>
+          <a href="#contato" class="text-gray-300 hover:text-purple-500 font-medium transition">CONTATO</a>
+        </div>
+        <div class="-mr-2 flex items-center md:hidden">
+          <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-300 hover:bg-gray-800 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Abrir menu</span>
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="md:hidden hidden" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-slate-900">
+        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-purple-500">INÍCIO</a>
+        <a href="#sobre" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-purple-500">SOBRE</a>
+        <a href="#certificacoes" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-purple-500">CERTIFICAÇÕES</a>
+        <a href="#projetos" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-purple-500">PROJETOS</a>
+        <a href="#contato" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-purple-500">CONTATO</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="relative bg-gradient-to-br from-slate-950 to-slate-900 min-h-screen flex items-center pt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-8 text-center md:text-left">
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
+            Técnico em Desenvolvimento de Sistemas
+          </h1>
+          <p class="text-xl text-gray-300 max-w-lg">
+            Foco em back-end, lógica e dados. Experiência com automação, Arduino e projetos de impacto educacional e ambiental.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <a href="#projetos" class="px-8 py-3 bg-purple-600 hover:bg-purple-700 text-white font-medium rounded-lg transition duration-300 hover-scale">
+              Ver Projetos
+            </a>
+            <a href="#contato" class="px-8 py-3 border border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white font-medium rounded-lg transition duration-300 hover-scale">
+              Contato
+            </a>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <img src="imgs/code-tech-dev-svgrepo-com (1).svg" 
+               alt="Data Analysis" 
+               class="rounded-xl shadow-2xl w-full max-w-md hover-scale transition duration-300">
+        </div>
+      </div>
+    </div>
+    <div class="absolute bottom-8 left-0 right-0 flex justify-center">
+      <a href="#sobre" class="text-gray-400 hover:text-white animate-bounce">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+<section id="sobre" class="py-20 bg-slate-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-white mb-4">SOBRE MIM</h2>
+      <div class="w-20 h-1 bg-purple-600 mx-auto"></div>
+    </div>
+    
+    <div class="flex flex-col md:flex-row items-center gap-12">
+      <div class="w-full md:w-2/5 flex justify-center">
+        <div class="relative group">
+          <div class="absolute -inset-2 bg-gradient-to-r from-purple-600 to-fuchsia-500 rounded-xl blur opacity-75 group-hover:opacity-100 transition duration-300"></div>
+          <img src="imgs/sobremim.jpeg" alt="Foto de Perfil" class="relative rounded-xl w-80 h-80 object-cover shadow-lg">
+        </div>
+      </div>
+      
+      <div class="w-full md:w-3/5 space-y-6">
+        <p class="text-lg text-gray-300">
+          Técnico em Desenvolvimento de Sistemas, com forte base em lógica de programação e back-end. 
+          Já atuei em projetos envolvendo manipulação de dados, automação com Arduino e integração entre hardware e software. 
+          Tenho interesse em soluções tecnológicas com impacto real, especialmente nas áreas de educação e meio ambiente.       
+        </p>
+      
+        <div class="pt-4">
+          <h4 class="text-xl font-semibold text-white mb-6">Minhas Habilidades</h4>
+          <div class="flex flex-wrap gap-4">
+            <div class="relative group">
+              <div class="p-3 bg-purple-900/30 rounded-full border border-purple-800 hover:bg-purple-800 transition duration-300">
+                <i class="fab fa-python text-3xl text-purple-400"></i>
+              </div>
+              <span class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">Python</span>
+            </div>
+
+            <div class="relative group">
+              <div class="p-3 bg-purple-900/30 rounded-full border border-purple-800 hover:bg-purple-800 transition duration-300">
+                <i class="fab fa-php text-3xl text-purple-400"></i>
+              </div>
+              <span class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">Php</span>
+            </div>
+            
+            <div class="relative group">
+              <div class="p-3 bg-purple-900/30 rounded-full border border-purple-800 hover:bg-purple-800 transition duration-300">
+                <i class="fab fa-js-square text-3xl text-yellow-400"></i>
+              </div>
+              <span class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">JavaScript</span>
+            </div>
+            
+            <div class="relative group">
+              <div class="p-3 bg-purple-900/30 rounded-full border border-purple-800 hover:bg-purple-800 transition duration-300">
+                <i class="fab fa-html5 text-3xl text-red-400"></i>
+              </div>
+              <span class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">HTML5</span>
+            </div>
+            
+            <div class="relative group">
+              <div class="p-3 bg-purple-900/30 rounded-full border border-purple-800 hover:bg-purple-800 transition duration-300">
+                <i class="fab fa-css3-alt text-3xl text-blue-400"></i>
+              </div>
+              <span class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">CSS3</span>
+            </div>
+            
+            <div class="relative group">
+              <div class="p-3 bg-purple-900/30 rounded-full border border-purple-800 hover:bg-purple-800 transition duration-300">
+                <i class="fas fa-database text-3xl text-blue-300"></i>
+              </div>
+              <span class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">SQL</span>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="certificacoes" class="py-20 bg-slate-950">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-white mb-4">CERTIFICAÇÕES</h2>
+      <div class="w-20 h-1 bg-purple-600 mx-auto"></div>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="bg-slate-900 rounded-xl shadow-lg overflow-hidden hover-scale transition duration-300">
+        <div class="h-48 flex items-center justify-center p-4">
+          <img src="imgs/AWS.png" alt="Certificação AWS" class="h-full object-contain">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-white mb-2">AWS Cloud Practitioner</h3>
+          <p class="text-gray-300 mb-4">Fundamentos de Computação em Nuvem na AWS</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs font-medium px-3 py-1 bg-purple-900/30 text-purple-200 rounded-full border border-purple-800">Cloud</span>
+            <span class="text-xs font-medium px-3 py-1 bg-violet-900/30 text-violet-200 rounded-full border border-violet-800">AWS</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="bg-slate-900 rounded-xl shadow-lg overflow-hidden hover-scale transition duration-300">
+        <div class="h-48 flex items-center justify-center p-4">
+          <img src="imgs/googleanalytics.png" alt="Certificação Data Analytics" class="h-full object-contain">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-white mb-2">Google Data Analytics Professional</h3>
+          <p class="text-gray-300 mb-4">Análise e tratamento de dados</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs font-medium px-3 py-1 bg-purple-950/30 text-purple-300 rounded-full border border-purple-900">Data</span>
+            <span class="text-xs font-medium px-3 py-1 bg-violet-950/30 text-violet-300 rounded-full border border-violet-900">Gestão</span>
+            <span class="text-xs font-medium px-3 py-1 bg-violet-950/30 text-violet-300 rounded-full border border-violet-900">Planilhas</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="bg-slate-900 rounded-xl shadow-lg overflow-hidden hover-scale transition duration-300">
+        <div class="h-48 flex items-center justify-center p-4">
+          <img src="imgs/Bradesco - Organização Pessoal.png" alt="Certificação Bradesco" class="h-full object-contain">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-white mb-2">Organização Pessoal</h3>
+          <p class="text-gray-300 mb-4">Fundação Bradesco</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs font-medium px-3 py-1 bg-purple-900/30 text-purple-200 rounded-full border border-purple-800">Soft Skills</span>
+            <span class="text-xs font-medium px-3 py-1 bg-violet-900/30 text-violet-200 rounded-full border border-violet-800">Produtividade</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="bg-slate-900 rounded-xl shadow-lg overflow-hidden hover-scale transition duration-300">
+        <div class="h-48 flex items-center justify-center p-4">
+          <img src="imgs/Bradesco - Desenvolvimento Pessoal.png" alt="Certificação Bradesco" class="h-full object-contain">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-white mb-2">Desenvolvimento Pessoal</h3>
+          <p class="text-gray-300 mb-4">Fundação Bradesco</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs font-medium px-3 py-1 bg-purple-950/30 text-purple-300 rounded-full border border-purple-900">Crescimento</span>
+            <span class="text-xs font-medium px-3 py-1 bg-violet-950/30 text-violet-300 rounded-full border border-violet-900">Habilidades</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projetos" class="py-20 bg-slate-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-white mb-4">MEUS PROJETOS</h2>
+      <p class="text-xl text-gray-300">Clique na logo do projeto para acessar seu repositório no Github.</p>
+      <div class="w-20 h-1 bg-purple-600 mx-auto mt-4"></div>
+    </div>
+    
+    <div class="flex justify-center">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl">
+        <div class="bg-slate-800 rounded-xl shadow-xl overflow-hidden hover-scale transition duration-300">
+          <a href="https://github.com/Muril08/SISEP" target="_blank" class="block">
+            <div class="h-56 flex items-center justify-center p-4 bg-slate-700">
+              <img src="imgs/SISEP.svg" alt="Projeto SISEP" class="h-full object-contain">
+            </div>
+          </a>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-2">SISEP</h3>
+            <p class="text-gray-300 mb-4">Sistema Integrado de Escolas Profissionais</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs font-medium px-3 py-1 bg-purple-900/30 text-purple-200 rounded-full border border-purple-800">PHP</span>
+              <span class="text-xs font-medium px-3 py-1 bg-violet-900/30 text-violet-200 rounded-full border border-violet-800">MySQL</span>
+              <span class="text-xs font-medium px-3 py-1 bg-purple-950/30 text-purple-300 rounded-full border border-purple-900">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl shadow-xl overflow-hidden hover-scale transition duration-300">
+          <a href="https://github.com/Muril08/Conecta-Local" target="_blank" class="block">
+            <div class="h-56 flex items-center justify-center p-4 bg-slate-700">
+              <img src="imgs/ConectaLocal.svg" alt="Projeto Conecta Local" class="h-full object-contain">
+            </div>
+          </a>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-2">Conecta Local</h3>
+            <p class="text-gray-300 mb-4">Plataforma de catálogo online para comércios locais</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs font-medium px-3 py-1 bg-purple-900/30 text-purple-200 rounded-full border border-purple-800">HTML/CSS</span>
+              <span class="text-xs font-medium px-3 py-1 bg-violet-900/30 text-violet-200 rounded-full border border-violet-800">Php</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl shadow-xl overflow-hidden hover-scale transition duration-300">
+          <a href="https://github.com/Muril08/Piano-Tutor" target="_blank" class="block">
+            <div class="h-56 flex items-center justify-center p-4 bg-slate-700">
+              <img src="imgs/PianoTutor.svg" alt="Projeto Piano Tutor" class="h-full object-contain">
+            </div>
+          </a>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-2">Piano Tutor</h3>
+            <p class="text-gray-300 mb-4">Aplicação para aprendizado de piano</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs font-medium px-3 py-1 bg-purple-900/30 text-purple-200 rounded-full border border-purple-800">Arduíno UNO</span>
+              <span class="text-xs font-medium px-3 py-1 bg-violet-900/30 text-violet-200 rounded-full border border-violet-800">C++</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-slate-800 rounded-xl shadow-xl overflow-hidden hover-scale transition duration-300">
+          <a href="https://github.com/Muril08/eco-cycle" target="_blank" class="block">
+            <div class="h-56 flex items-center justify-center p-4 bg-slate-700">
+              <img src="imgs/Ecocycle.svg" alt="Projeto Piano Tutor" class="h-full object-contain">
+            </div>
+          </a>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-2">Ecocycle</h3>
+            <p class="text-gray-300 mb-4">Sistema de vermicomposteira automatizada</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs font-medium px-3 py-1 bg-purple-900/30 text-purple-200 rounded-full border border-purple-800">Arduíno UNO</span>
+              <span class="text-xs font-medium px-3 py-1 bg-violet-900/30 text-violet-200 rounded-full border border-violet-800">C++</span>
+              <span class="text-xs font-medium px-3 py-1 bg-violet-900/30 text-violet-200 rounded-full border border-violet-800">n8n</span>
+              <span class="text-xs font-medium px-3 py-1 bg-purple-900/30 text-purple-200 rounded-full border border-purple-800">HTML/CSS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="contato" class="py-20 bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-white mb-4">ENTRE EM CONTATO</h2>
+        <div class="w-20 h-1 bg-purple-600 mx-auto"></div>
+      </div>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Informações de Contato - Lado Esquerdo -->
+        <div class="bg-slate-900 p-8 rounded-xl shadow-lg">
+          <h3 class="text-2xl font-bold text-white mb-6">Informações de Contato</h3>
+          
+          <div class="space-y-6">
+            <div class="flex items-start space-x-4">
+              <div class="flex-shrink-0 bg-purple-900 p-3 rounded-full">
+                <i class="fas fa-envelope text-purple-400 text-xl"></i>
+              </div>
+              <div>
+                <h4 class="text-lg font-medium text-gray-300">E-mail</h4>
+                <p class="text-gray-400">muriloalvesvv@gmail.com</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-4">
+              <div class="flex-shrink-0 bg-purple-900 p-3 rounded-full">
+                <i class="fas fa-phone text-purple-400 text-xl"></i>
+              </div>
+              <div>
+                <h4 class="text-lg font-medium text-gray-300">Telefone</h4>
+                <p class="text-gray-400">(84) 98133-7995</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Redes Sociais - Lado Direito -->
+        <div class="bg-slate-900 p-8 rounded-xl shadow-lg">
+          <h3 class="text-2xl font-bold text-white mb-6">Redes Sociais</h3>
+          
+          <div class="space-y-4">
+            <a href="https://www.linkedin.com/in/murilo-alves-6726552b9" target="_blank" 
+               class="flex items-center space-x-4 p-3 rounded-lg hover:bg-slate-800 transition duration-300 group">
+              <div class="flex-shrink-0 bg-purple-900 p-3 rounded-full">
+                <i class="fab fa-linkedin-in text-purple-400 text-xl"></i>
+              </div>
+              <div>
+                <h4 class="text-lg font-medium text-gray-300 group-hover:text-purple-400 transition">LinkedIn</h4>
+                <p class="text-gray-400 text-sm">Conecte-se profissionalmente</p>
+              </div>
+            </a>
+            
+            <a href="https://github.com/Muril08" target="_blank" 
+               class="flex items-center space-x-4 p-3 rounded-lg hover:bg-slate-800 transition duration-300 group">
+              <div class="flex-shrink-0 bg-purple-900 p-3 rounded-full">
+                <i class="fab fa-github text-purple-400 text-xl"></i>
+              </div>
+              <div>
+                <h4 class="text-lg font-medium text-gray-300 group-hover:text-purple-400 transition">GitHub</h4>
+                <p class="text-gray-400 text-sm">Veja meus projetos</p>
+              </div>
+            </a>
+            
+            <a href="https://www.instagram.com/muri.lofx/" target="_blank" 
+               class="flex items-center space-x-4 p-3 rounded-lg hover:bg-slate-800 transition duration-300 group">
+              <div class="flex-shrink-0 bg-purple-900 p-3 rounded-full">
+                <i class="fab fa-instagram text-purple-400 text-xl"></i>
+              </div>
+              <div>
+                <h4 class="text-lg font-medium text-gray-300 group-hover:text-purple-400 transition">Instagram</h4>
+                <p class="text-gray-400 text-sm">Siga meu perfil pessoal</p>
+              </div>
+            </a>
+            
+            <a href="#" 
+               class="flex items-center space-x-4 p-3 rounded-lg hover:bg-slate-800 transition duration-300 group">
+              <div class="flex-shrink-0 bg-purple-900 p-3 rounded-full">
+                <i class="fab fa-whatsapp text-purple-400 text-xl"></i>
+              </div>
+              <div>
+                <h4 class="text-lg font-medium text-gray-300 group-hover:text-purple-400 transition">WhatsApp</h4>
+                <p class="text-gray-400 text-sm">+55 84 8133-7995</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-slate-950 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <p>&copy; 2025 Murilo Alves. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('[aria-controls="mobile-menu"]').addEventListener('click', function() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+    
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+          
+          const mobileMenu = document.getElementById('mobile-menu');
+          if (!mobileMenu.classList.contains('hidden')) {
+            mobileMenu.classList.add('hidden');
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
